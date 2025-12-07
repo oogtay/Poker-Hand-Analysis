@@ -11,9 +11,15 @@ Quantified first-in aggression percentages (bet/raise share) and checked frequen
 Investigated turn bet sizing distributions and the relationship between hand categories and pot commitment levels.
 
 Analyzed WSOP hands to derive player-level aggression indices and identify stylistic differences among professionals.
+
+Machine Learning Additions
+
+For Sprint 3, the project introduced a full modeling pipeline to predict whether a player will take an aggressive action (bet or raise) on a given street. This included feature engineering, one-hot encoding of hand types and positions, and building a logistic regression baseline model. The model was evaluated using accuracy, precision, recall, F1 score, ROC-AUC, and coefficient interpretation to understand which features most strongly influenced aggression.
+The goal of this addition was not just prediction, but using model outputs to deepen the behavioral insights found in the EDA phase.
 📁 Poker-Hand-Analysis
 ├── data/                # Raw and cleaned datasets (hand histories, WSOP sample)
-├── Untitled.ipynb/           # Jupyter notebooks for EDA, modeling, and visualization
+├── DataAnalysis.ipynb/           # Jupyter notebooks for EDA, modeling, and visualization
+├── MachineLearningAnalysis.ipynb/ #jupyter notebooks for ML 
 ├── figures/             # Exported plots and summary tables
 ├── report/              # Sprint 2 project report (PDF + DOCX)
 └── README.md            # Project summary
